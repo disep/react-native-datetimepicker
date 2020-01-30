@@ -39,7 +39,7 @@ RCT_EXPORT_VIEW_PROPERTY(minuteInterval, NSInteger)
 RCT_EXPORT_VIEW_PROPERTY(onChange, RCTBubblingEventBlock)
 RCT_REMAP_VIEW_PROPERTY(mode, datePickerMode, UIDatePickerMode)
 RCT_REMAP_VIEW_PROPERTY(timeZoneOffsetInMinutes, timeZone, NSTimeZone)
-RCT_CUSTOM_VIEW_PROPERTY(textColor, UIColor, RCTDatePicker)
+RCT_CUSTOM_VIEW_PROPERTY(textColor, UIColor, UIDatePicker)
 {
   UIColor *textColor = json ? [[UIColor alloc] initWithCGColor:[RCTConvert CGColor:json]] : [UIColor blackColor];
   [view setValue:textColor forKeyPath:@"textColor"];
